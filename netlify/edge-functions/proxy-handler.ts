@@ -3,30 +3,7 @@ import { HTMLRewriter } from "https://ghuc.cc/worker-tools/html-rewriter/index.t
 
 // 1. 定义你的路径映射表
 const PROXY_MAP: Record<string, string> = {
-  // API 服务器
-  "/discord": "https://discord.com/api",
-  "/telegram": "https://api.telegram.org",
-  "/openai": "https://api.openai.com",
-  "/claude": "https://api.anthropic.com",
-  "/gemini": "https://generativelanguage.googleapis.com",
-  "/meta": "https://www.meta.ai/api",
-  "/groq": "https://api.groq.com/openai",
-  "/xai": "https://api.x.ai",
-  "/cohere": "https://api.cohere.ai",
-  "/huggingface": "https://api-inference.huggingface.co",
-  "/together": "https://api.together.xyz",
-  "/novita": "https://api.novita.ai",
-  "/portkey": "https://api.portkey.ai",
-  "/fireworks": "https://api.fireworks.ai",
-  "/openrouter": "https://openrouter.ai/api",
-  // 任意网址
-  "/hexo": "https://hexo-gally.vercel.app", 
-  "/hexo2": "https://hexo-987.pages.dev",
-  "/halo": "https://blog.gally.dpdns.org",
-  "/kuma": "https://kuma.gally.dpdns.org",
-  "/hf": "https://huggingface.co",
-  "/tv": "https://tv.gally.ddns-ip.net",
-  "/news": "https://newsnow-ahm.pages.dev"
+
 };
 
 export default async (request: Request, context: Context) => {
